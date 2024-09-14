@@ -11,7 +11,7 @@ document.getElementById("pdfForm").addEventListener("submit", async function (e)
     formData.append("file", pdfFile);
 
     try {
-      const response = await fetch("http://localhost:3000", {
+      const response = await fetch("https://resume-parser-dw4g.onrender.com", {
         method: "POST",
         body: formData,
       });
