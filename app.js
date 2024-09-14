@@ -11,7 +11,7 @@ document.getElementById("pdfForm").addEventListener("submit", async function (e)
     formData.append("file", pdfFile);
 
     try {
-      const response = await fetch("http://localhost:3000/test", {
+      const response = await fetch("http://localhost:3000", {
         method: "POST",
         body: formData,
       });
